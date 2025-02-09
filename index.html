@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Damilare Omole Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    />
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-wrapper">
+        <div class="menu-header">
+            <div class="logo">
+                <img src="assets/damilare.jpg" alt="Damilare Omole" class="profile-image">
+                <span class="title">Data Scientist</span>
+            </div>
+        </div>
+        <div class="menu-handle">
+            <span class="material-icons">chevron_left</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#home" class="active">
+                    <span class="material-icons">home</span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <span class="material-icons">person</span>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects">
+                    <span class="material-icons">code</span>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#interests">
+                    <span class="material-icons">psychology</span>
+                    <span>Skills & Research</span>
+                </a>
+            </li>
+            <li>
+                <a href="#publications">
+                    <span class="material-icons">article</span>
+                    <span>Publications</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <span class="material-icons">mail</span>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="ai-particles"></div>
+            <div class="content-wrapper">
+                <div class="home-text">
+                    <h1 class="glitch-text">Hello, I am Damilare.</h1>
+                    <div class="cursor"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="content-wrapper">
+                <div class="about-content">
+                    <p>
+                        I earned my Ph.D. in Systems Engineering from the Missouri University of Science and Technology, 
+                        where I focused on computational intelligence and complex systems modeling. During my studies, 
+                        I discovered a passion for working with data, particularly in designing machine learning and 
+                        deep learning systems to solve real-world problems. Observing how artificial intelligence can 
+                        transform large datasets into actionable insights inspired me to explore its potential further. 
+                        These experiences solidified my belief that AI can streamline processes, reveal new possibilities, 
+                        and ultimately shape a more efficient future.
+                    </p>
+                    <p>
+                        I am passionate about creating intelligent systems that address practical challenges and make 
+                        daily life more convenient. Whether developing small-scale prototypes or managing large-scale 
+                        implementations, I strive to integrate advanced AI solutions that promote sustainable progress. 
+                        I aim to unite theory with practice, ensuring that artificial intelligence becomes functional 
+                        and accessible. As I embark on new opportunities, I remain eager to learn, collaborate, and 
+                        contribute meaningfully to our rapidly changing world.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Recent Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Agentic MYSQL RAG</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Stevenomole/agentic-mysql-rag" target="_blank" class="github-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">An intelligent agent system that combines MySQL database interactions with retrieval-augmented generation for enhanced data querying and analysis.</p>
+                    <div class="project-image">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="assets/ai-agent.jpg" alt="AI Agent System">
+                            </div>
+                            <button class="slider-btn prev"><span class="material-icons">chevron_left</span></button>
+                            <button class="slider-btn next"><span class="material-icons">chevron_right</span></button>
+                            <div class="slider-dots"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Trading Decision Support System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Stevenomole/Bitcoin_price_prediction_with_onchain_data" target="_blank" class="github-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">Deep learning models for Bitcoin price prediction using on-chain data, featuring CNN-LSTM, LSTNet, and TCN architectures.</p>
+                    <div class="project-image">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="assets/trading-system-1.jpg" alt="Trading System Dashboard 1">
+                                <img src="assets/trading-system-2.jpg" alt="Trading System Dashboard 2">
+                                <img src="assets/trading-system-3.jpg" alt="Trading System Dashboard 3">
+                            </div>
+                            <button class="slider-btn prev"><span class="material-icons">chevron_left</span></button>
+                            <button class="slider-btn next"><span class="material-icons">chevron_right</span></button>
+                            <div class="slider-dots"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Multimodal Price Forecasting</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Stevenomole/Multimodal_bitcoin_price_prediction" target="_blank" class="github-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">Innovative price prediction system combining chart image analysis with market data using multimodal deep learning.</p>
+                    <div class="project-image">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="assets/multimodal-system-1.jpg" alt="Multimodal System 1">
+                                <img src="assets/multimodal-system-2.jpg" alt="Multimodal System 2">
+                            </div>
+                            <button class="slider-btn prev"><span class="material-icons">chevron_left</span></button>
+                            <button class="slider-btn next"><span class="material-icons">chevron_right</span></button>
+                            <div class="slider-dots"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Product Portfolio Optimization</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Stevenomole/ga-product-portfolio-optimization-extended" target="_blank" class="github-link">
+                                <span class="material-icons">code</span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">Web application for product portfolio optimization using genetic algorithms and advanced optimization techniques.</p>
+                    <div class="project-image">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="assets/portfolio-optimization-1.jpg" alt="Portfolio System 1">
+                                <img src="assets/portfolio-optimization-2.jpg" alt="Portfolio System 2">
+                                <img src="assets/portfolio-optimization-3.jpg" alt="Portfolio System 3">
+                            </div>
+                            <button class="slider-btn prev"><span class="material-icons">chevron_left</span></button>
+                            <button class="slider-btn next"><span class="material-icons">chevron_right</span></button>
+                            <div class="slider-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Research Interests Section -->
+        <section id="interests" class="section">
+            <h2>Skills & Research Interests</h2>
+            <div class="content-wrapper">
+                <div class="vertical-interests">
+                    <!-- AI & ML Skills -->
+                    <div class="vertical-card">
+                        <h3>Programming</h3>
+                        <p>Python, SQL, and MATLAB.</p>
+                    </div>
+                    <div class="vertical-card">
+                        <h3>Machine Learning</h3>
+                        <p>Supervised learning, unsupervised learning, and deep learning architectures.</p>
+                    </div>
+                    <div class="vertical-card">
+                        <h3>Natural Language Processing</h3>
+                        <p>Text classification and sentiment analysis.</p>
+                    </div>
+                    <div class="vertical-card">
+                        <h3>Generative AI</h3>
+                        <p>Prompt engineering, retrieval-augmented generation (RAG), and AI agents.</p>
+                    </div>
+                    <!-- Technical & Engineering Skills -->
+                    <div class="vertical-card">
+                        <h3>MLOps & Deployment</h3>
+                        <p>Git, Docker, CI/CD, and model monitoring systems.</p>
+                    </div>
+                    <div class="vertical-card">
+                        <h3>Data Engineering</h3>
+                        <p>Data preprocessing, feature engineering, ETL pipelines, and data quality assurance.</p>
+                    </div>
+                    <div class="vertical-card">
+                        <h3>Operations Research</h3>
+                        <p>Mathematical optimization, decision analysis, resource allocation, and supplychain management.</p>
+                    </div>
+                    <div class="vertical-card">
+                        <h3>Systems Thinking & Modeling</h3>
+                        <p>Complex systems analysis, simulation systems, and sustainable solutions design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <div class="publications-list">
+                <!-- Media Coverage -->
+                <div class="publication-group">
+                    <h3>Media Coverage</h3>
+                    <div class="publication media">
+                        <a href="https://apnews.com/press-release/ein-presswire-newsmatics/artificial-intelligence-georgia-49ab133e2297582f1412239aa4bafd35" target="_blank" class="publication-link">
+                            <h4>Cracking the Bitcoin Code: Predicting Price Directions and Unlocking Returns</h4>
+                            <p class="publication-meta">The Associated Press, January 9, 2025</p>
+                            <div class="publication-citation">
+                                Press release distributed via The Associated Press highlighting research findings on Bitcoin price prediction using deep learning models and trading strategies.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Published Papers -->
+                <div class="publication-group">
+                    <h3>Published Papers</h3>
+                    <div class="publication">
+                        <a href="https://link.springer.com/article/10.1186/s40854-024-00643-1" target="_blank" class="publication-link">
+                            <h4>Deep Learning for Financial Price Direction Prediction: Models and Trading Strategies Empirically Compared</h4>
+                            <p class="publication-meta">Financial Innovation, 2024</p>
+                            <div class="publication-citation">
+                                Omole, O., & Enke, D. (2024). Deep Learning for Financial Price Direction Prediction: Models and Trading Strategies Empirically Compared. Financial Innovation, 10(1), 117.
+                            </div>
+                        </a>
+                    </div>
+                    <div class="publication">
+                        <a href="https://www.proquest.com/docview/3082337057" target="_blank" class="publication-link">
+                            <h4>A System Dynamics Modeling Approach to Explore Market Dynamics</h4>
+                            <p class="publication-meta">American Society for Engineering Management Conference, 2023</p>
+                            <div class="publication-citation">
+                                Omole, O., & Enke, D. (2023). A System Dynamics Modeling Approach to Explore Market Dynamics. Proceedings of the American Society for Engineering Management Conference.
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Papers Under Review -->
+                <div class="publication-group">
+                    <h3>Under Review</h3>
+                    <div class="publication">
+                        <div class="publication-link">
+                            <h4>Using Machine and Deep Learning Models, On-Chain Data, and Technical Analysis for Predicting Price Direction and Magnitude</h4>
+                            <p class="publication-meta">Engineering Applications of Artificial Intelligence</p>
+                            <div class="publication-citation">
+                                Omole, O., & Enke, D. Using Machine and Deep Learning Models, On-Chain Data, and Technical Analysis for Predicting Price Direction and Magnitude. In Review, Engineering Applications of Artificial Intelligence.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publication">
+                        <div class="publication-link">
+                            <h4>Multimodal Price Prediction Model Using Chart Images and Market Data</h4>
+                            <p class="publication-meta">Financial Innovation</p>
+                            <div class="publication-citation">
+                                Omole, O., & Enke, D. Multimodal Price Prediction Model Using Chart Images and Market Data. In Review, Financial Innovation.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>If you have any questions or just want to connect, feel free to reach out to me through any of the platforms below.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Stevenomole" target="_blank" class="social-link">
+                        <img src="assets/github-logo.png" alt="GitHub Logo" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/oluwadamilare-omole/" target="_blank" class="social-link">
+                        <img src="assets/linkedin-logo.png" alt="LinkedIn Logo" class="social-icon">
+                    </a>
+                    <a href="mailto:oluwadamilare.omole@gmail.com" class="social-link">
+                        <img src="assets/email-logo.png" alt="Email Logo" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
