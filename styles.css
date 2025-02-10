@@ -71,16 +71,14 @@
   }
   
   /* Home Section
-     - Minimal bottom padding
-     - Center the content vertically in 70vh 
-     - Remove the default .section padding so it does not push the hero too close to the next section 
+     Using flex to vertically center text in 70vh
   */
   #home {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center; /* vertical center */
-    padding: 0; /* remove base section padding */
+    padding: 0; /* remove base .section padding to reduce bottom space */
   }
   
   /* A universal content wrapper with max-width of 60% */
@@ -90,7 +88,7 @@
     padding: 0;
   }
   
-  /* Section Headings (30% smaller than 5rem => 3.5rem) */
+  /* Section Headings: 3.5rem for desktop */
   .section h2 {
     font-family: 'Italiana', serif;
     font-size: 3.5rem;
@@ -100,7 +98,7 @@
     text-align: left;
   }
   
-  /* Hero Heading (Double the 3.5rem => 7rem) */
+  /* Hero Heading: 7rem for desktop */
   .hero-heading {
     font-family: 'Italiana', serif;
     font-size: 7rem;
@@ -403,15 +401,15 @@
     transform: scale(1.1);
   }
   
-  /* About Section: 30% narrower than the standard 60% */
+  /* About Section: 30% narrower than the standard 60% on desktop */
   .about-wrapper {
-    max-width: 42% !important; /* 30% less than 60% */
+    max-width: 42% !important; /* 30% less than 60% for desktop */
     margin: 0 auto;
     padding: 0;
   }
   
   .about-content {
-    /* No flex here so text can wrap around the floated image */
+    /* No flex so text can wrap around the floated image */
   }
   
   .about-image {
@@ -451,6 +449,22 @@
   }
   
   @media (max-width: 768px) {
+    /* Smaller screen headings */
+    .hero-heading {
+      font-size: 4rem; /* reduce from 7rem */
+    }
+  
+    .section h2 {
+      font-size: 2rem; /* reduce from 3.5rem */
+    }
+  
+    /* Let #home auto-size if content is big */
+    #home {
+      min-height: auto;
+      padding: 2rem 0;
+      display: block;
+    }
+  
     .nav-links {
       gap: 1.5rem;
     }
@@ -462,14 +476,6 @@
     .content-wrapper {
       max-width: 90%;
       padding: 0 1rem;
-    }
-  
-    .hero-heading {
-      font-size: 5rem; /* reduce from 7rem on smaller screens */
-    }
-  
-    .section h2 {
-      font-size: 2.5rem; /* reduce from 3.5rem on smaller screens */
     }
   
     .vertical-interests {
@@ -487,7 +493,12 @@
     .project-image {
       height: 200px;
     }
-    
+  
+    /* Let the About wrapper fill more space on mobile so it is not too cramped */
+    .about-wrapper {
+      max-width: 90% !important; 
+    }
+  
     .about-image {
       float: none;
       width: 100%;
